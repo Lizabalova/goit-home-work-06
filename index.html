@@ -17,13 +17,18 @@
     <nav class="logo-navigation">
         <a href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
         <ul class="nav-links">
-            <Li><a href="./index.html" class="navigation-link-current">Studio</a></Li>
+            <Li><a href="./index.html" class="navigation-link current">Studio</a></Li>
             <li><a href="" class="navigation-link">Portfolio</a></li>
             <li><a href="" class="navigation-link">Contacts</a></li>
         </ul>
     </nav>
+    <button class="mobile-menu-open-btn mobile" type="button">
+        <svg class="mobile-menu-open-btn-icon" width="24" height="24" aria-label="mobile menu open icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+    </button>
     <address class="adress-link">
-        <ul class="contacts">
+        <ul class="contacts header-list">
             <li><a href="" class="contacts-link">info@devstudio.com</a></li>
             <li><a href="" class="contacts-link">+11 (000) 111-11-11</a></li>
         </ul>
@@ -33,7 +38,7 @@
     
 
 <main>
-    <section class="first-section">
+    <section class="first-section hero">
         <div class="container">
     <h1 class="main-content">Effective Solutions for Your Business</h1>
     <button class="button" type="button">Order Service</button>
@@ -41,7 +46,7 @@
     </section>
 
 <section class="white-bg">
-    <div class="container">
+    <div class="container container-features">
      <h2 class="visually-hidden">Features</h2>
     <ul class="features-list">
     <li class="feature-list-items">
@@ -85,13 +90,18 @@
 </section>
 
          <section class="light-bg">
-        <div class="container">
+        <div class="container container-team">
         <h2 class="our-team-title">Our Team</h2>
     <ul class="our-team-list">
     <li class="our-team-list-items">
-         <img src="./images/MarkGuerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
+         <img 
+         srcset="./images/teamnew/Mark_Guerro.jpg ./images/teamnew/Mark_Guerro2x.jpg"
+         src="./images/MarkGuerrero.jpg"  
+         alt="Mark Guerrero" 
+         width="264" 
+         height="260" />
          <div class="list-container">
-        <h3 class="our-team-list-title">Mark Guerrero</h3>
+        <h3 class="our-team-list-title team-center">Mark Guerrero</h3>
         <p class="our-team-list-text">Product Designer</p>
         <ul class="socials">
             <li class="social-links">
@@ -127,10 +137,15 @@
     </li>
 
     <li class="our-team-list-items">
-        <img src="./images/TomFord.jpg" alt="Tom Ford" width="264" height="260"  />
+        <img 
+        srcset="./images/teamnew/Tom_Ford.jpg 1x, ./images/teamnew/Tom_Ford2x.jpg 2x"
+        src="./images/TomFord.jpg" 
+        alt="Tom Ford" 
+        width="264" 
+        height="260"  />
         <div class="list-container">
-        <h3 class="our-team-list-title">Tom Ford</h3>
-        <p class="our-team-list-text">Frontend Developer</p>
+        <h3 class="our-team-list-title team-center">Tom Ford</h3>
+        <p class="our-team-list-text team-center">Frontend Developer</p>
         <ul class="socials">
             <li class="social-links">
                 <a href="" class="social-link-section">
@@ -164,7 +179,9 @@
     </div>
     </li>
     <li class="our-team-list-items">
-        <img src="./images/CamilaGarcia.jpg" alt="Camila Garcia" width="264" height="260"  />
+        <img 
+        srcset="./images/teamnew/Camila_Garcia.jpg 1x, ./images/teamnew/Camila_Garcia2x.jpg 2x"
+        src="./images/CamilaGarcia.jpg" alt="Camila Garcia" width="264" height="260"  />
         <div class="list-container">
         <h3 class="our-team-list-title">Camila Garcia</h3>
         <p class="our-team-list-text">Marketing</p>
@@ -201,7 +218,9 @@
     </div>
     </li>
     <li class="our-team-list-items">
-        <img src="./images/DanielWilson.jpg" alt="Daniel Wilson" width="264" height="260"  />
+        <img 
+        srcset="./images/teamnew/Daniel_Wilson.jpg 1x, ./images/teamnew/Daniel_Wilson2x.jpg 2x"
+        src="./images/DanielWilson.jpg" alt="Daniel Wilson" width="264" height="260"  />
         <div class="list-container">
         <h3 class="our-team-list-title">Daniel Wilson</h3>
         <p class="our-team-list-text">UI Designer</p>
@@ -377,7 +396,7 @@
         </footer>
 
 
-        <div class="container-form">
+        <div class="container-form visually-hidden">
             <div class="backdrop-form">
                 <button type="button" class="close-button">
                     <svg class="backdrop-icon" width="8" height="8">
@@ -484,6 +503,75 @@
 
             </form> 
         </div>
+        </div>
+
+        <div class="mobile-menu-wrapper">
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close-btn" type="button">
+                    <svg 
+                    class="icon-close-menu-mobile" 
+                    width="8" 
+                    height="8"
+                    >
+                        <use href="./images/icons.svg#icon-close-menu"></use>
+                    </svg>
+                </button>
+                <nav class="nav-hidden">
+                    <ul class="header-list-hidden">
+                        <li class="mobile-menu-item">
+                            <a class="link-menu-header link" href="">
+                                <span class="link-studio-menu-mobile">Studio</span>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="link-menu-header link" href="">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="link-menu-header link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="address-menu-mobile">
+                <ul class="list-address-menu-mobile ">
+                    <li>
+                        <a class="addres-link-mobile" href="+110001111111">
+                            <span class="tel-menu-mobile">+11 (000) 111-11-11</span>
+                    </a></li>
+                    <li><a href="" class="addres-link-mobile">info@devstudio.com</a></li>
+                    </li>
+                </ul>
+                </address>
+            <ul class="socials-links-menu-mobile">
+                <li class="social-link-item-menu-mobile">
+                    <a href="" class="social-link-menu-mobile">
+                        <svg class="icon-social-link-menu-mobile" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-link-item-menu-mobile">
+                    <a href="" class="social-link-menu-mobile">
+                        <svg class="icon-social-link-menu-mobile" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-link-item-menu-mobile">
+                    <a href="" class="social-link-menu-mobile">
+                        <svg class="icon-social-link-menu-mobile" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-link-item-menu-mobile">
+                    <a href="" class="social-link-menu-mobile">
+                        <svg class="icon-social-link-menu-mobile" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            </div>
         </div>
 </body>
 </html>
