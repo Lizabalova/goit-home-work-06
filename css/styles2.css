@@ -399,7 +399,6 @@ margin-left: auto;
 }
 
 /*************************************PORTFOLIO SECTION***********************/
-@media(min-width:320px) {
     .portfolio-section {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -423,7 +422,7 @@ margin-left: auto;
 
 /****************************FOOTER*************************/
 
-@media(min-width:320px) {
+{
     .dark-bg {
         padding-bottom: 96px 0;
         flex-direction: column;
@@ -466,6 +465,9 @@ margin-left: auto;
         margin-top: 16px;
     }
 }
+
+
+
 
 /********************Mobile Menu****************/
 .mobile-menu-wrapper {
