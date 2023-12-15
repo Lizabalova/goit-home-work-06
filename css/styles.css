@@ -31,6 +31,8 @@ ul {
 }
 img{
     display: block;
+    height: auto;
+    width: 100%;
     
 }
 .visually-hidden {
@@ -83,8 +85,6 @@ button{
     letter-spacing: 0.54px;
     text-transform: uppercase;
     margin-right: 76px;
-    padding: 24px 0;
-    margin-left: 15px;
 }
 
 .studio{
@@ -249,8 +249,7 @@ margin-right: 76x;
 
     /***************************SECOND SECTION/FEATURES**********************************/
     .white-bg{
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding: 96px 0;
     }
 
    .features-list{

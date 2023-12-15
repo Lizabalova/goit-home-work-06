@@ -285,7 +285,6 @@
 .main-content {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 72px;
     width: 150px;
     color: #FFFFFF;
     text-align: center;
@@ -386,7 +385,7 @@
 }
 
 .features-title-list {
-    font-weight: 700px;
+    font-weight: 700;
     color: #2E2F42;
     font-size: 36px;
     line-height: 1.11;
@@ -406,6 +405,9 @@
 }
 
 @media (min-width: 768px) {
+    .white-bg{
+        padding: 96px;
+    }
     .features-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -977,8 +979,6 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 40px;
-    margin-top: 72px;
-
 }
 
 .nav-hidden {
